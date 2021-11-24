@@ -10,12 +10,14 @@ const assertEqual = (actual, expected) => {
 const countLetters= (str) => {
   let newObj = {};
   for (ele of str) {
-    if (newObj[ele]) {newObj[ele] += 1}
-    else {newObj[ele] = 1}
+    if (ele !== " ") {
+      if (newObj[ele]) {newObj[ele] += 1}
+      else {newObj[ele] = 1}
+    }
   }
   return newObj;
 }
 
 
 
-console.log(countLetters('LHL'));
+console.log(countLetters('LH L'));
