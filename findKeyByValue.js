@@ -9,7 +9,7 @@ const assertEqual = (actual, expected) => {
 
 
 const findKeyByValue = (obj, valueToMatch) => {
-  for (let key in obj) {
+  for (let element of array) {
     if (obj[key] === valueToMatch) {
       return key;
     }
@@ -26,3 +26,17 @@ const bestTVShowsByGenre = {
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+
+
+
+
+
+const testFunction = (array) => {
+  for (let ele of array) {
+    console.log(ele)
+  }
+}
+
+const testArray = ["test", "hope", "colour", "three"]
+
+console.log(testFunction(testArray))

@@ -1,15 +1,14 @@
 const letterPositions = function(sentence) {
   const results = {};
-  for (let i = 0; i < sentence.length; i++) {
-    let ele = sentence[i];
-    console.log(ele);
-    if (ele !== " ") {
-      if (results[ele]) {
-        results[ele].push(i);
+  let newSentence = sentence.split(" ").join(``)
+  for (let i = 0; i < newSentence.length; i++) {
+    let character = newSentence[i];
+    console.log(character);
+      if (results[character]) {
+        results[character].push(i);
       } else {
-        results[ele] = [i];
+        results[character] = [i];
       }
-    }
   }
   return results;
 };
