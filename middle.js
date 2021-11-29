@@ -25,6 +25,5 @@ const middle = (arr) => {
  else if (arr.length % 2 === 0) {return [arr[arr.length/2-1],  arr[arr.length/2]]}
 }
 
-assertArraysEqual(middle([1,2,3,4,5,6,7,8]), [4,5]);
-assertArraysEqual(middle([1,2,3,4,5,6,7]), [4]);
-assertArraysEqual(middle([1,2]), []);
+module.exports = middle;
+
