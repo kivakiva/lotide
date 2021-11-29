@@ -31,9 +31,11 @@ const map = (array, func) => {
   return newArr
 }
 
-const results1 = map(words, word => word[0]);
-console.log(results1);
+module.exports = map;
 
-assertArraysEqual([ 'g', 'c', 't', 'm', 't' ], map(words, word => word[0]));
-assertArraysEqual([4,5,6,7,8,9], map(test2, num => num + 3));
-assertArraysEqual([0,0,0,0,0,0], map(test2, num => 0));
+// const results1 = map(words, word => word[0]);
+// console.log(results1);
+
+// assertArraysEqual([ 'g', 'c', 't', 'm', 't' ], map(words, word => word[0]));
+// assertArraysEqual([4,5,6,7,8,9], map(test2, num => num + 3));
+// assertArraysEqual([0,0,0,0,0,0], map(test2, num => 0));

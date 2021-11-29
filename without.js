@@ -20,9 +20,9 @@ const assertArraysEqual = (arr1, arr2) => {
   }
 };
 //test
-console.log(assertArraysEqual([1,2,3],[1,2,3]));
-console.log(assertArraysEqual([1,2,3],[1,2,4]));
-console.log(assertArraysEqual([1,2,3],[1,2,3,4]));
+// console.log(assertArraysEqual([1,2,3],[1,2,3]));
+// console.log(assertArraysEqual([1,2,3],[1,2,4]));
+// console.log(assertArraysEqual([1,2,3],[1,2,3,4]));
 
 const assertEqual = (actual, expected) => {
   if (actual === expected) {
@@ -48,6 +48,8 @@ const without = (source, itemsToRemove) => {
   }
   return newArr;
 };
+
+module.exports = without;
 
 //test
 // console.log(assertArraysEqual(without([1,2,3,4], [4]),[1,2,3]));

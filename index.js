@@ -10,22 +10,22 @@ const map = require('./map');
 const letterPositions = require('./letterPositions');
 const flatten = require('./flatten');
 const findKeyByValue = require('./findKeyByValue');
-const findkey = require('./findkey');
+const findKey = require('./findKey');
 const eqObjects = require('./eqObjects');
 
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
-  eqObjects: eqObjects,
-  findkey: findkey,
-  findKeyByValue: findKeyByValue,
-  flatten: flatten,
-  letterPositions: letterPositions,
-  map: map,
-  takeUntil: takeUntil,
-  without: without,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  eqArrays: eqArrays
+  head,
+  tail,
+  middle,
+  eqObjects,
+  findKey,
+  findKeyByValue,
+  flatten,
+  letterPositions,
+  map,
+  takeUntil,
+  without,
+  countLetters,
+  countOnly,
+  eqArrays
 };

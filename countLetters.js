@@ -18,6 +18,4 @@ const countLetters= (str) => {
   return newObj;
 }
 
-
-
-console.log(countLetters('LH L'));
+module.exports = assertEqual;
